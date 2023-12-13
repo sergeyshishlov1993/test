@@ -1,5 +1,5 @@
+@import "media";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-$active-color: rgba(89, 50, 234, 1);
 
 * {
   font-family: "Poppins", sans-serif;
@@ -9,13 +9,14 @@ $active-color: rgba(89, 50, 234, 1);
 }
 
 .wrapper {
+  margin: auto;
   display: flex;
 }
 
 .sidebar {
   padding: 36px 28px 76px 28px;
   position: relative;
-  width: 306px;
+
   &__logo {
     display: flex;
     align-items: center;
@@ -133,9 +134,6 @@ $active-color: rgba(89, 50, 234, 1);
   }
 
   &__table {
-    display: grid;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
     &_title {
       display: grid;
       grid-template-columns: repeat(6, 1fr);
@@ -147,6 +145,7 @@ $active-color: rgba(89, 50, 234, 1);
         font-size: 14px;
         font-weight: 500;
         color: rgba(181, 183, 192, 1);
+        max-width: 150px;
       }
     }
     &_cell {
@@ -160,6 +159,7 @@ $active-color: rgba(89, 50, 234, 1);
         font-size: 14px;
         font-weight: 500;
         color: rgba(41, 45, 50, 1);
+        max-width: 150px;
       }
       a {
         color: inherit;
@@ -242,6 +242,6 @@ $active-color: rgba(89, 50, 234, 1);
 
 .active {
   border-radius: 8px;
-  background: $active-color !important;
+  background: rgba(89, 50, 234, 1) !important;
   color: rgba(255, 255, 255, 1);
 }
